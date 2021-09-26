@@ -1,6 +1,14 @@
 import bs4
 import requests
 
+SCRAPER_DATA = {'LD': {'www': 'http://www.bip.ug-ladekzdroj.dolnyslask.pl/',
+                       'pages': ['dokument,iddok,4938,idmp,7,r,r', 'dokument,iddok,4940,idmp,7,r,r']
+                       },
+                'ST': {'www': 'http://bip.stronie.dolnyslask.pl/',
+                       'pages': ['index,idmp,275,r,r', 'index,idmp,275,r,r,istr,2', 'index,idmp,275,r,r,istr,3']
+                       },
+                }
+
 
 def connect(www):
     try:
